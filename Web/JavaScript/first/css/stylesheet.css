@@ -1,0 +1,30 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: aqua;
+    text-align: center;
+    margin: 30px 30px;
+    height: 100px;
+}
+
+header div{
+    font-size: 50px;
+}
+
+div p{
+    font-size: 30px;
+}
+
+.center{
+    display: inline;
+    text-align: center;
+}
+
+.li{
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: crimson;
+    text-align: left;
+}

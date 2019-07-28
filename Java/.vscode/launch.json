@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FFT",
+            "request": "launch",
+            "mainClass": "m.FFT.FFT",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Java_c0d3ff8b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Shit",
+            "request": "launch",
+            "mainClass": "Shit",
+            "projectName": "Java_c0d3ff8b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Java_c0d3ff8b"
+        },
+        {
+            "type": "java",
+            "name": "Current",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}"
+        }
+    ]
+}

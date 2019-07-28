@@ -1,0 +1,106 @@
+body {
+    background-color: yellowgreen;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo{
+    display: inline-block;
+    /* background-image: url("images/logo.png"); */
+    background-size: 80px;
+    background-repeat: no-repeat;
+    top:20px;
+    position: relative;
+    height: 80px;
+    width:80px;
+}
+
+section.feature-box {
+    color: aqua;
+    display: flex;
+}
+
+.feature-box div {
+    margin: 4px;
+}
+
+section.feature-box.sales div {
+    display: block;
+    background: green;
+}
+
+section.feature-box.closeout div {
+    display: block;
+    background: rgb(128, 0, 117);
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+/* pseudo class */
+
+div:first-child {
+    color: white;
+}
+
+div {
+    background: red;
+    display: inline-block;
+    width: 300px;
+    margin: auto;
+}
+
+header {
+    background: yellow;
+    background-image: url("images/Spider.jpg");
+    background-size: 300px;
+    height: 300px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+section {
+    background: peru;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: initial;
+}
+
+footer {
+    background: purple;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 10%;
+    background: grey;
+    border-radius: 5px;
+}
+
+li:first-child {
+    margin-left: 0;
+    background-color: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header li:hover{
+    background: red;
+}
+
+h1 {
+    margin-left: 30px;
+}
+

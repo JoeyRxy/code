@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "hello": "cpp",
+        "dc3": "cpp",
+        "dc32": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
+}

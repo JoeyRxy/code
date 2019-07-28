@@ -1,0 +1,60 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "editor.selectionBackground": "#004ba0",
+            "editor.selectionHighlightBackground": "#004ba0",
+            "menu.selectionForeground": "#FF7042",
+            "menubar.selectionForeground": "#ff7e28",
+            "editorIndentGuide.background": "#a7a7a7",
+            "titleBar.border": "#ff71d4",
+            "debugToolBar.background": "#014610",
+            "sideBarSectionHeader.foreground": "#ff7042",
+            "sideBarSectionHeader.border": "#868686",
+            "statusBar.debuggingBackground": "#920297",
+            "editorSuggestWidget.border": "#ff74ec",
+            "editorHoverWidget.border": "#ff74ec",
+            "statusBar.debuggingForeground": "#f4f802",
+            "titleBar.inactiveBackground": "#4e4e4e",
+            "editor.lineHighlightBackground": "#5cfb0028",
+            "activityBar.foreground": "#00ff15",
+            "activityBar.inactiveForeground": "#ff71d4",
+            "tab.activeBackground": "#1a4b3a",
+            "editorGroup.border": "#ff71d4",
+            "statusBar.background": "#0382f8",
+            "editor.wordHighlightBackground": "#004ba0",
+            "editor.wordHighlightStrongBackground": "#004ba0",
+            "tab.activeForeground": "#00ffc8",
+            "statusBar.foreground": "#f4f802",
+            "editorCursor.foreground": "#f4f802",
+            "panel.border": "#868686",
+            "panelTitle.activeForeground": "#91ff00",
+            "editorSuggestWidget.highlightForeground": "#549bf7",
+            "editorSuggestWidget.selectedBackground": "#8501646c",
+            "editorLineNumber.activeForeground": "#fb98de",
+            "progressBar.background": "#FF7042",
+            "tab.activeBorder": "#FF7042",
+            "editorWidget.border": "#FF7042",
+            "panelTitle.activeBorder": "#FF7042",
+            "sideBar.border": "#868686"
+        },
+        "[Solarized Light]": {
+            "editorCursor.foreground": "#00ff15",
+            "panel.border": "#645a00",
+            "editor.selectionBackground": "#13a00063",
+            "editor.selectionHighlightBackground": "#13a00063"
+        },
+        "[skyblue]": {
+            "tab.inactiveBackground": "#15ad01",
+            "activityBar.background": "#0e0e0e"
+        },
+        "[Default Light+]": {
+            "editor.lineHighlightBackground": "#ff75c63d",
+            "editor.lineHighlightBorder": "#ff000000"
+        },
+        "titleBar.activeBackground": "#42b883",
+        "titleBar.inactiveBackground": "#42b88399",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveForeground": "#15202b99"
+    }
+}

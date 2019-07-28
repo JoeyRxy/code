@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "mine.trial.App",
+            "projectName": "first",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyCalculator",
+            "request": "launch",
+            "mainClass": "mine.trial.MyCalculator",
+            "projectName": "first"
+        },
+        {
+            "type": "java",
+            "name": "Current Launch",
+            "request": "launch",
+            "mainClass": "mine.trial.${fileBasenameNoExtension}",
+            "projectName": "first",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trial",
+            "request": "launch",
+            "mainClass": "mine.trial.trial",
+            "projectName": "first",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Evaluate",
+            "request": "launch",
+            "mainClass": "mine.trial.Evaluate",
+            "projectName": "first",
+            "console": "integratedTerminal"
+        }
+    ]
+}
