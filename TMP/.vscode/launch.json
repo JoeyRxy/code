@@ -1,6 +1,18 @@
 {
     "configurations": [
         {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "file": "${file}"
+        },
+        {
             "name": "Python: 附加",
             "type": "python",
             "request": "attach",
