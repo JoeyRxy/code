@@ -10,6 +10,6 @@ function hello() {
 var y = document.getElementsByClassName('edit');
 y.item(0).addEventListener('click', f);
 
-function f(){
+function f() {
     alert("f");
 }
