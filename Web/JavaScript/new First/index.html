@@ -8,18 +8,101 @@
 </head>
 
 <body>
-    <div>
-        <div id="x">100</div>
-        <div id="y">200</div>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <p name="pn">Hello</p>
+    <a title="aname" id="aid">address</a>
+
+    <ul id="ulid">
+        <li>shit</li>
+        <li>fuck</li>
+        <li>shit</li>
+    </ul>
+
+    <div id="div">
+        <p id="pid">shit</p>
     </div>
-    <p>
-        <button onmouseover="demo()" onclick="change()">click me</button>
-    </p>
+    <script>
+        // function getName() {
+        //     var count = document.getElementsByName("pn");
+        //     alert(count.length);
+        //     var p = count[0];
+        //     p.innerHTML = "Wolrd";
+        // }
+        // getName();
 
-    <p id="out">
-    </p>
+        // function getAttr() {
+        //     var anode = document.getElementById("aid");
+        //     var attr = anode.getAttribute("title");
+        //     alert(attr);
+        // }
+        // getAttr();
 
-    <script src="main.js"></script>
+
+        // function setAttr() {
+        //     var anode = document.getElementById('aid');
+        //     anode.setAttribute('title', 'fuck');
+        //     var attr = anode.getAttribute('title');
+        //     alert(attr);
+        // }
+
+        // setAttr();
+
+        // //得到子节点
+        // function getChildNode() {
+        //     var child = document.getElementById('ulid').childNodes;
+        //     alert(child.length);
+        //     alert(child[0].nodeType);
+        // }
+        // getChildNode();
+
+        // function getParent() {
+        //     var pNode = document.getElementById("pid").parentNode;
+        //     alert(pNode.nodeName);
+        // }
+
+        // getParent();
+
+        //添加节点
+        function createNode() {
+            var body = document.body;
+            var link = document.createElement("a");
+            link.href = "https://www.google.com";
+            link.innerHTML = "Google";
+            link.id = "aid";
+            link.style.color = "red";
+            body.appendChild(link);
+        }
+        createNode();
+
+        //insert before
+        function addNode() {
+            var div = document.getElementById("div");
+            var node = document.getElementById("pid");
+            var newnode = document.createElement("p");
+            newnode.innerHTML = "fuck";
+            newnode.style.color = 'green';
+            div.insertBefore(newnode, node); //注意是div(父节点)的属性方法
+        }
+        addNode();
+
+        //remove node
+        function deleteNode() {
+            var div = document.getElementById("div");
+            var p = div.removeChild(div.childNodes[1]); //注意角标：如果html里换行了，那么第一个childNOdes第一个就是换行符那个
+            alert(p.innerHTML);
+        }
+        deleteNode();
+
+        function getSize() {
+            var width = document.documentElement.offsetWidth;
+            var height = document.documentElement.offsetHeight;
+            console.log(width + ", " + height);
+        }
+        getSize();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div">
+        <button id="btn1">
+            btn1
+        </button>
+    </div>
+
+    <script>
+        // var btn1 = document.getElementById("btn1");
+        // btn1.addEventListener("click", f, true);
+
+        // function f() {
+        //     alert("Fuck you");
+        // }
+
+        //针对不同浏览器的优化
+        var btn1 = document.getElementById("btn1");
+        if (btn1.addEventListener) {
+            btn1.addEventListener("click", demo, true);
+        } else if (btn1.attachEvent) {
+            btn1.attachEvent("onclick", demo);
+        } else {
+            btn1.onclick = demo();
+        }
+
+        function demo() {
+            alert("hello world");
+        }
+    </script>
+</body>
+
+</html>

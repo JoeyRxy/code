@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Object</title>
+</head>
+
+<body>
+    <div id="div">
+        <button id="btn1">btn</button>
+    </div>
+
+    <a href="http://www.baidu.com" id="aid">baidu</a>
+
+    <script>
+        var btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", showType, true);
+        document.getElementById("div").addEventListener("click", showDiv);
+
+        var a = document.getElementById("aid");
+        a.addEventListener("click", showA, true);
+
+        function showType(event) {
+            alert("hello " + event.type);
+            alert(event.target);
+            event.stopPropagation();
+        }
+
+        function showDiv() {
+            alert("div");
+        }
+
+        function showA(event) {
+            event.stopPropagation();
+            alert("show A " + a.href); //htmlElement的href等属性可以直接使用
+        }
+    </script>
+</body>
+
+</html>

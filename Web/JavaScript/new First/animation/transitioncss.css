@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+    color: rebeccapurple;
+    background: green;
+    transition: width 2s, height 2s, transform 2s;
+    /* 使用`transition`定义动画的时长 */
+}
+
+.trans:hover {
+    transform: translate(50px, 50px)scale(2, 2);
+}
