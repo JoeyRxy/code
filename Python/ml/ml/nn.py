@@ -58,7 +58,7 @@ class NeuralNetwork:
         self.w1 = w_opt[0 : H * (I + 1)].reshape(H, I + 1)
         self.w2 = w_opt[H * (I + 1) :  ].reshape(O, H + 1)
 
-        print 'c = ', self.c
+        print ('c = ', self.c)
 
     def cost(self, w, X, Y, lamb, I, H, O):
 
