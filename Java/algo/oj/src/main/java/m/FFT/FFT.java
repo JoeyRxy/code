@@ -1,12 +1,20 @@
 package m.FFT;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * FFT 实现了<b>同址计算</b> 目前支持数组长度<b>N</b>为2的幂次 主要方法为fft和ifft
  * 另一个辅助方法为trim(X)——将过小的数字视为0
+ * 
+ * recognize complex pattern:"-?\d+(\.\d+)? *[+-] *[ij] *\d+(\.\d+)? *"
+ * 
+ * test data: 1.4 +j, 2 ,-5 +j 7, 3.5 + j 2.1
  */
 @SuppressWarnings("unused")
 public class FFT {
-    final static double precision = 1E-10;
+    final static double precision = 1E-5;
 
     /**
      * 另一种比较好的方法是通过类似 <b>dfs</b> 的方法（全排列！） see <b>DSP : P518</b>
@@ -212,21 +220,56 @@ public class FFT {
         return ifft(X);
     }
 
-    public static void main(String[] args) {
-        double[] x = { 0, 1, 0, 0, 0, 5, 0, 4 };
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
 
-        Complex[] X = fft(x);
-        trim(X);
-        System.out.println("fft");
-        for (int i = 0; i < X.length; i++) {
-            System.out.print(X[i] + "\t");
-        }
+        System.out.println("Enter 0 for FFT,Enter 1 for IFFT\nEnter `quit` for quit.");
+        boolean useFFT;
+        String start = scanner.nextLine();
+        while (!start.equals("quit")) {
+            if (start.charAt(0) == '0') {
+                useFFT = true;
+            } else if (start.charAt(0) == '1') {
+                useFFT = false;
+            } else {
+                System.out.println("the input must be 0 or 1!");
+                start = scanner.nextLine();
+                continue;
+            }
 
-        System.out.println("\nifft");
-        Complex[] xr = ifft(X);
-        trim(xr);
-        for (int i = 0; i < xr.length; i++) {
-            System.out.print(xr[i] + "\t");
+            System.out.println("put all in one line,delimited by comma");
+            List<Complex> list = new ArrayList<>();
+            String[] s = scanner.nextLine().split(",");
+            for (var str : s) {
+                list.add(Complex.complexParser(str));
+            }
+
+            // 为什么这种方式不行？貌似已经输入了 ^Z 所以已经判定了没有下一行，所以循环的最后就无法再次获得下一个输入了？
+            // while (scanner.hasNextLine()) {
+            // list.add(Complex.complexParser(scanner.nextLine()));
+            // }
+            int len = list.size();
+            Complex[] x = new Complex[len];
+            for (int i = 0; i < len; i++)
+                x[i] = list.get(i);
+
+            Complex[] X;
+            if (useFFT) {
+                X = FFT.fft(x);
+                System.out.println("The fft result is:");
+            } else {
+                X = FFT.ifft(x);
+                System.out.println("The ifft result is:");
+            }
+
+            int count = 0;
+            for (var xval : X)
+                System.out.println((count++) + " : " + xval);
+            System.out.println();
+            System.out.println("Finish!\n\nNext Calculate:");
+            System.out.println("\nEnter 0 for FFT,Enter 1 for IFFT\nEnter `quit` for quit.");
+            start = scanner.nextLine();
         }
+        scanner.close();
     }
 }

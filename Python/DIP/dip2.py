@@ -56,7 +56,7 @@ def show(_img, _title=None):
 
 ############################
 img = np.array(Image.open(
-    'DIP\\Lenna.png'))[:, :, 0]
+    'Lenna.png'))[:, :, 0]
 show(img, 'original')
 
 sigma = 0.05

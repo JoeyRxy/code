@@ -55,8 +55,8 @@ def PSNR(_img1, _img2):
     return - 10 * np.log10(a)
 
 
-img = np.array(Image.open(
-    'DIP\\Lenna.png'))[:, :, 0]
+tmp = Image.open('Lenna.png')
+img = np.array(tmp)[:, :, 0]
 show(img, 'original')
 # %%
 # fft

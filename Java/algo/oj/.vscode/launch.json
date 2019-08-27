@@ -1,0 +1,196 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Complex<oj>",
+            "request": "launch",
+            "mainClass": "m.FFT.Complex",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FFT<oj>",
+            "request": "launch",
+            "mainClass": "m.FFT.FFT",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Huffman<oj>",
+            "request": "launch",
+            "mainClass": "m.Huffman",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CountingSort<oj>",
+            "request": "launch",
+            "mainClass": "m.learn.CountingSort",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Knapsack<oj>",
+            "request": "launch",
+            "mainClass": "m.learn.Knapsack",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MException<oj>",
+            "request": "launch",
+            "mainClass": "m.learn.MException",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinPQMap<oj>",
+            "request": "launch",
+            "mainClass": "m.learn.MinPQMap",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Solution<oj>",
+            "request": "launch",
+            "mainClass": "m.learn.Solution",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AddTwoNum<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.AddTwoNum",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BiTree<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.BiTree",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Find132Pattern<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.Find132Pattern",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GenLargestNum<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.GenLargestNum",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GenParentheses<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.GenParentheses",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LCSubstring<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.LCSubstring",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongStrNoRepeatSolution<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.LongStrNoRepeatSolution",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RangeSumOfBST<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.RangeSumOfBST",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ZeroOneMatrix<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.ZeroOneMatrix",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-constructMaximumBinaryTreeSolution<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.constructMaximumBinaryTreeSolution",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-longestPalindromeSolution<oj>",
+            "request": "launch",
+            "mainClass": "m.leetcode.longestPalindromeSolution",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ObjectArrayTest<oj>",
+            "request": "launch",
+            "mainClass": "m.ttest.ObjectArrayTest",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShiftOperator<oj>",
+            "request": "launch",
+            "mainClass": "m.ttest.ShiftOperator",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TEST<oj>",
+            "request": "launch",
+            "mainClass": "m.ttest.TEST",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test2<oj>",
+            "request": "launch",
+            "mainClass": "m.ttest.test2",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-testForGeneric<oj>",
+            "request": "launch",
+            "mainClass": "m.ttest.testForGeneric",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CartesiaTreeMin<oj>",
+            "request": "launch",
+            "mainClass": "m.using.CartesiaTreeMin",
+            "projectName": "oj"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SuffixTree<oj>",
+            "request": "launch",
+            "mainClass": "m.using.SuffixTree",
+            "projectName": "oj"
+        }
+    ]
+}
