@@ -1,5 +1,6 @@
 #include <iostream>
 #include "lib/DC3"
+using namespace std;
 int main()
 {
     char s[] = "mississippi";
@@ -14,5 +15,6 @@ int main()
     {
         printf("%d ", SA[i]);
     }
+
     system("pause");
 }
