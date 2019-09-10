@@ -22,3 +22,14 @@
       <version>version</version>
     </dependency>
    ```
+
+3. download sources and javadocs
+
+  in the java-project:
+   ```cmd
+   mvn dependency:sources
+   mvn dependency:resolve -Dclassifier=javadoc
+   ```
+
+   if these files are not uploaded by the author to the repository,then there will promot:
+   
