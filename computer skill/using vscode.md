@@ -28,3 +28,7 @@ breadcrumbs
 1. `Ctrl+Shift+.` open breadcrumbs
 2. `Ctrl+LeftArrow/RightArrow` navigate
 3. `LeftArrow/RightArrow` fold\unfold elements
+
+# Hack
+- `workbench.desktop.main.nls.js` 文件中去掉文件的[Unsupported]
+- 在`workbench.desktop.main.css` 中的 `docs-sides`等选项，改大小
