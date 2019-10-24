@@ -45,7 +45,7 @@ public class Find132Pattern {
 
     // ATTENTION
     /**
-     * Genius!
+     * ATTENTION
      */
     private boolean usingBinarySearch(int[] nums) {
         int len = nums.length;

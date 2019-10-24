@@ -24,6 +24,14 @@
   - [时域有限，频域无限；频域有限，时域无限](#时域有限频域无限频域有限时域无限)
   - [时域 频域 增采样](#时域-频域-增采样)
 - [习题](#习题)
+- [其他DFT性质](#其他dft性质)
+  - [时移](#时移)
+  - [实战](#实战)
+- [FFT](#fft)
+  - [复杂度](#复杂度)
+  - [两种抽取方式的原理和流图](#两种抽取方式的原理和流图)
+    - [按时间抽取](#按时间抽取)
+    - [按频率抽取](#按频率抽取)
 
 [matlab参考文件][reffile]
 # DFT分析连续信号
@@ -117,10 +125,14 @@ X_e(e^{j\omega})=X(e^{jL\omega}))
 $$
 #### 2) 离散频域
 $$
-X_e[k]=\sum_{r=0}^{L-1}X[k-rN]
+X_e[k]=\begin{cases}
+  X[k]&,0\le k\le N-1\\
+  X[k-N]&,N\le k\le 2N-1\\
+  \vdots
+\end{cases}
 $$
 看似一样，但是记住 ***DFT要在DFS*** 上来看：
-这里的离散频域的长度为$NL$，就是DFS截取了得更长了。
+这里的离散频域的长度为$NL$，就是DFS截取了得更 长了。
 （或者说将$X[k]$以N为周期平移L次）
 
 还是上边那句话：
@@ -149,8 +161,9 @@ $$
 在频域以$\dfrac{2\pi k}{NL}$采样
 $$
 X_i[k]=\begin{cases}
-    LX[k]&,0<\omega<\frac{N}{2}\cup NL-\frac{N}{L}<\omega<NL\\
-    0&,others
+    LX[k]&,0\le k<\frac{N}{L}\\
+    0&,\frac{N}{L}\le k<NL-\frac{N}{L}\\
+    LX[k-(L-1)N]&, NL-\frac{N}{L}\le k<NL
 \end{cases}
 $$
 应该是：
@@ -236,3 +249,41 @@ DSP 第八章
 
 [reffile]:dft.mlx
 
+# 其他DFT性质
+## 时移
+
+## 实战
+$x[2n+1]$的$\frac{N}{2}$点DFT：
+<details>
+<summary>ANS</summary>
+
+先时移一个单位，再进行减采样！
+$$
+\operatorname{DFT}[x[2n+1]]=\frac{1}{2}W_N^k(X[k]{\color{red}{-}}X[k+\frac{N}{2}])
+$$
+</details>
+
+# FFT
+## 复杂度
+- 共有$\log_2N$级
+- 每一级有$\dfrac{N}{2}$个蝶形
+- 每个蝶形有1次乘法，两次加法
+- 总共有：$\dfrac{N}{2}\log_2N$个乘法，有$N\log_2N$个加法
+
+## 两种抽取方式的原理和流图
+### 按时间抽取
+$$
+X[k]=\sum_{n=0}^{\frac{N}{2}-1}(x[2n]+W_N^kx[2n+1])W_{N/2}^{nk}
+$$
+当$k\in[N/2,N)$时，$W_N^k=-W_N^{k-\frac{N}{2}}$
+<img src="image/2019-10-22-13-10-42.png" style="zoom:50%;" />
+
+### 按频率抽取
+$$
+\begin{aligned}
+  X[2k]&=\sum_{n=0}^{\frac{N}{2}-1}\left(x[n]+x\left[n+\frac{N}{2}\right]\right)W_{N/2}^{nk}\\
+  X[2k+1]&=\sum_{n=0}^{\frac{N}{2}-1}\left\{\left(x[n]-x\left[n+\frac{N}{2}\right]\right){\color{red}{W_N^n}}\right\}W_{N/2}^{nk}
+\end{aligned}
+$$
+注意将上式的奇数项和[时域的情况](#实战)进行对比
+<img src="image/2019-10-22-13-10-56.png" style="zoom:50%;" />
