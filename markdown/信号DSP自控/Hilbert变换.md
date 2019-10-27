@@ -20,3 +20,9 @@ $$
 $$
 ---
 ## 单边频谱的$IDTFT$
+
+
+# 记忆
+$$
+\frac{1}{\pi t}\Rightarrow {\color{red}{-}}\operatorname{j}{\rm sgn}(\Omega)
+$$

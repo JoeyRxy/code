@@ -257,9 +257,9 @@ $x[2n+1]$的$\frac{N}{2}$点DFT：
 <details>
 <summary>ANS</summary>
 
-先时移一个单位，再进行减采样！
+先时移（左移）一个单位，再进行减采样！
 $$
-\operatorname{DFT}[x[2n+1]]=\frac{1}{2}W_N^k(X[k]{\color{red}{-}}X[k+\frac{N}{2}])
+\operatorname{DFT}[x[2n+1]]=\frac{1}{2}W_N^{-k}(X[k]{\color{red}{-}}X[k+\frac{N}{2}])
 $$
 </details>
 
