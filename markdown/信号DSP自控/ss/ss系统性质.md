@@ -20,3 +20,4 @@ $\displaystyle\int_{-\infty}^{\infty}|h(t)|\mathrm{d}t<\infty$
     答案：$2\delta(t)$  
     - [ ] why？难道是在跳变处取值为$\dfrac{f(t-0)+f(t+0)}{2}$？搞不好真是这样
 2. 
+

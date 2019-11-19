@@ -18,3 +18,4 @@
 *.blg
 **/.vscode/ipch
 .idea/
+*.html
