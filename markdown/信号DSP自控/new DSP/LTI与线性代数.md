@@ -15,7 +15,7 @@ $$
 
 > 在这里，*特征向量*被称为*特征函数*，或就是**频率响应**
 
-> ATTENTION:这里的特征函数$\operatorname{e}^{\operatorname{j}\omega_0 n},\operatorname{e}^{\operatorname{j}\Omega_0 t}$取值范围都是$(-\infty,+\infty)$. 
+> $\colorbox{yellow}{ATTENTION}$:这里的特征函数$\operatorname{e}^{\operatorname{j}\omega_0 n},\operatorname{e}^{\operatorname{j}\Omega_0 t}$取值范围都是$(-\infty,+\infty)$. 
 > 一旦进行截断，就会导致出现其他频率分量。    
 ## 更牛的特征函数（复频域）
 - Laplace : $T[\operatorname{e}^{s_0t}]=H(s_0)\operatorname{e}^{s_0t}$

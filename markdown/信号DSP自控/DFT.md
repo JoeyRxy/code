@@ -199,7 +199,7 @@ $$
 
 看起来就好像把长度为$N$的$x[n]$压缩在了$\dfrac{N}{M}$的长度内.
 
-ATTENTION：不像[时域的结果](##减采样)，频域的减采样不会除以**M**.
+$\colorbox{yellow}{ATTENTION}$：不像[时域的结果](##减采样)，频域的减采样不会除以**M**.
 
 ## 增采样
 ### 1) 假的增采样
@@ -248,7 +248,7 @@ DSP 第八章
 8.37 : 
 ![](image/2019-09-16-21-37-50.png)
 ![](image/2019-09-16-21-38-10.png)
-ATTENTION $g_3[n]$和$g_4[n]$
+$\colorbox{yellow}{ATTENTION}$ $g_3[n]$和$g_4[n]$
 
 [reffile]:dft.mlx
 
