@@ -1,0 +1,14 @@
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Cookie: SINAGLOBAL=6756027495653.812.1580536146821; SUB=_2AkMpCopCf8NxqwJRmfwczGrjZIhyyQDEieKfVnuZJRMxHRl-yT92qlQdtRB6AoqkrZHX_donZaFJ4rTuuaWBI-P5ynxZ; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5qOwxeSUaDb3fa8PDRNDUA; UM_distinctid=170848f46e677d-076a2250f8087f-b383f66-130980-170848f46e75ca; UOR=,,news.cupl.edu.cn; login_sid_t=93bc13cb2cfdb9aa54cc0e04c4d9d7b5; cross_origin_proto=SSL; Ugrow-G0=1ac418838b431e81ff2d99457147068c; YF-V5-G0=e8fcb05084037bcfa915f5897007cb4d; wb_view_log=1368*9122; _s_tentry=-; Apache=3541863280629.2095.1585141602585; ULV=1585141602593:8:5:1:3541863280629.2095.1585141602585:1584420573897; WBStorage=42212210b087ca50|undefined
+DNT: 1
+Host: weibo.com
+Referer: https://weibo.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
+X-Requested-With: XMLHttpRequest
