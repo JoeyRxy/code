@@ -44,6 +44,7 @@ def show(_img, _title=None):
     plt.show()
 
 
+# %%
 # Load Data
 (X_train_original, y_train), (X_test_original, y_test) = mnist.load_data()
 
@@ -94,6 +95,20 @@ print("loss : {} \t accuracy : {}".format(loss, accuracy))
 
 # precdict
 y_pred = model.predict(X_test[:10])
+
+for i in range(10):
+    show(X_test_original[i, :, :], np.argmax(y_pred[i]))
+
+# %%
+model.save('kearsMinst.h5')
+
+
+# %%
+mine_model = load_model('kearsMinst.h5')
+
+
+# %%
+y_pred = mine_model.predict(X_test[:10])
 
 for i in range(10):
     show(X_test_original[i, :, :], np.argmax(y_pred[i]))
